@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finaluri</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="topbar">🔥 ზამთრის ფასდაკლება — ათასობით თამაშზე -80%-მდე</div>
+
+  <header>
+    <div class="container">
+      <div class="header-main">
+        <a href="#" class="logo">FU<span>T</span>URE</a>
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="რას ეძებ?" />
+          <select>
+            <option>ყველა კატეგორია</option>
+            <option>თამაშები</option>
+            <option>საჩუქრის ბარათები</option>
+            <option>პროგრამები</option>
+          </select>
+          <button id="searchBtn">🔍</button>
+        </div>
+        <div class="header-actions">
+          <a href="#" class="auth"><span class="auth-text">შესვლა / </span>რეგისტრაცია</a>
+          <a href="#">♡</a>
+          <a href="#" class="cart">🛒 <span id="cartCount">0</span></a>
+        </div>
+      </div>
+    </div>
+    <nav class="categories">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="#">🎮 თამაშები</a></li>
+          <li><a href="#">💻 პროგრამები</a></li>
+          <li><a href="#">🔁 გამოწერები</a></li>
+          <li><a href="#">🎁 საჩუქრის ბარათები</a></li>
+          <li><a href="#">📦 კეისები</a></li>
+          <li><a href="#">🏷️ აქცია <span class="hot">HOT</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <div class="slide-content">
+            <span class="tag">PRE-ORDER</span>
+            <h2>GRAND THEFT <em>AUTO VI</em></h2>
+            <p>წინასწარ შეუკვეთე ახლა და მიიღე ბონუსი. PC · Console · EUROPE</p>
+            <button class="btn">შეძენა</button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <span class="tag">BESTSELLER</span>
+            <h2>PSN <em>GIFT CARD</em></h2>
+            <p>შეავსე ბალანსი და ითამაშე ლიმიტების გარეშე.</p>
+            <button class="btn">შეძენა</button>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <span class="tag">PROMO</span>
+            <h2>STEAM <em>WALLET</em></h2>
+            <p>2x ბონუს ქულა Premium გამოწერით.</p>
+            <button class="btn">შეძენა</button>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev" id="prevBtn">‹</button>
+      <button class="slider-btn next" id="nextBtn">›</button>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section">
+      <div class="section-head">
+        <h3>დაათვალიერე <span>კატეგორიები</span></h3>
+      </div>
+      <div class="cat-grid" id="catGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h3>ბესტ<span>სელერები</span></h3>
+        <a href="#">ყველას ნახვა →</a>
+      </div>
+      <div class="card-grid" id="cardGrid"></div>
+    </section>
+
+    <section class="newsletter">
+      <h3>შემოგვიერთდი <span>ნიუსლეთერზე</span></h3>
+      <p>მიიღე ფასდაკლებები და სიახლეები პირველმა.</p>
+      <form class="news-form" id="newsForm">
+        <input type="email" id="newsEmail" placeholder="შენი ელ. ფოსტა" required />
+        <button type="submit" class="btn">გამოწერა</button>
+      </form>
+      <div class="news-msg" id="newsMsg"></div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="#" class="logo">FU<span>T</span>URE</a>
+          <p>ციფრული თამაშებისა და საჩუქრის ბარათების მარკეტფლეისი. სწრაფად, უსაფრთხოდ, იაფად.</p>
+        </div>
+        <div class="footer-col">
+          <h5>მაღაზია</h5>
+          <ul>
+            <li><a href="#">თამაშები</a></li>
+            <li><a href="#">პროგრამები</a></li>
+            <li><a href="#">გამოწერები</a></li>
+            <li><a href="#">საჩუქრის ბარათები</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>დახმარება</h5>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">მხარდაჭერა</a></li>
+            <li><a href="#">დაბრუნება</a></li>
+            <li><a href="#">კონტაქტი</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>კომპანია</h5>
+          <ul>
+            <li><a href="#">ჩვენ შესახებ</a></li>
+            <li><a href="#">კარიერა</a></li>
+            <li><a href="#">პირობები</a></li>
+            <li><a href="#">კონფიდენციალურობა</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 FUTURE Marketplace — ფინალური პროექტი</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
